@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
-                                <rect key="frame" x="20" y="83" width="567" height="497"/>
+                            <webView contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
+                                <rect key="frame" x="148" y="83" width="305" height="497"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-1i-PqB">
-                                <rect key="frame" x="262" y="45" width="76" height="30"/>
-                                <state key="normal" title="Open Page"/>
+                                <rect key="frame" x="246" y="45" width="109" height="30"/>
+                                <state key="normal" title="Staff Resources"/>
                                 <connections>
                                     <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFy-kT-y6I"/>
                                 </connections>
