@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openPage(sender: UIButton) {
-        if let url = NSURL(string: "https://www.usd230.org") {
+        if let url = NSURL(string: "http://www.usd230.org") {
             let request = NSURLRequest(URL: url)
             webView.loadRequest(request)
         }
