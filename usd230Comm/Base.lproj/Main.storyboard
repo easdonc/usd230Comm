@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Otq-Ec-RMu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Otq-Ec-RMu">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -37,19 +37,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phil's Wisdom and MOTD" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQV-YF-Hce">
-                                <rect key="frame" x="173" y="152" width="185" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phil's Wisdom and Message of the Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-t8-q19">
+                                <rect key="frame" x="84" y="30" width="433" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't be stupid!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ7-qo-IZT">
+                                <rect key="frame" x="239" y="85" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phil" translatesAutoresizingMaskIntoConstraints="NO" id="diU-la-ZUM">
+                                <rect key="frame" x="256" y="156" width="88" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="ayG-r9-vAC"/>
+                                    <constraint firstAttribute="height" constant="121" id="mcf-OB-YDf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="diU-la-ZUM" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="2QC-T3-a2t"/>
+                            <constraint firstItem="t2P-t8-q19" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="4Uy-Tf-l1Y"/>
+                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="25" id="CLe-J7-Drf"/>
+                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="HoU-nA-2er"/>
+                            <constraint firstItem="t2P-t8-q19" firstAttribute="top" secondItem="duC-Bh-Hqj" secondAttribute="topMargin" constant="30" id="XXW-cO-4r1"/>
+                            <constraint firstItem="diU-la-ZUM" firstAttribute="top" secondItem="nJ7-qo-IZT" secondAttribute="bottom" constant="50" id="p3g-Au-8dZ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xhr-jM-Nyh"/>
+                    <tabBarItem key="tabBarItem" title="Messages" selectedImage="Image" id="xhr-jM-Nyh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zu7-Zt-uTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295" y="217"/>
+            <point key="canvasLocation" x="1107" y="245"/>
         </scene>
         <!--Game-->
         <scene sceneID="K1i-AW-BWP">
@@ -63,19 +85,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="USD230 Fact Quiz" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYz-dk-KgD">
-                                <rect key="frame" x="164" y="140" width="141" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 230 Game or Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-pc-Q2b">
+                                <rect key="frame" x="170" y="30" width="260" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aUJ-pc-Q2b" firstAttribute="top" secondItem="F8x-Wy-4Xp" secondAttribute="top" constant="30" id="X32-X7-DAN"/>
+                            <constraint firstItem="aUJ-pc-Q2b" firstAttribute="centerX" secondItem="F8x-Wy-4Xp" secondAttribute="centerX" id="phc-UM-rkB"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="KBC-Op-yFO"/>
+                    <tabBarItem key="tabBarItem" title="Game" id="KBC-Op-yFO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNM-vc-DdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="867"/>
+            <point key="canvasLocation" x="445" y="791"/>
         </scene>
         <!--Staff Resources-->
         <scene sceneID="tne-QT-ifu">
@@ -90,35 +117,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-1i-PqB">
-                                <rect key="frame" x="246" y="28" width="109" height="30"/>
+                                <rect key="frame" x="212" y="20" width="176" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Staff Resources"/>
                                 <connections>
                                     <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFy-kT-y6I"/>
                                 </connections>
                             </button>
-                            <webView contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
-                                <rect key="frame" x="30" y="58" width="540" height="532"/>
+                            <webView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
+                                <rect key="frame" x="30" y="70" width="540" height="473"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dcC-1i-PqB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6Tc-fi-8Er"/>
-                            <constraint firstItem="foz-wP-hjZ" firstAttribute="top" secondItem="dcC-1i-PqB" secondAttribute="bottom" id="GJg-Q7-Te4"/>
-                            <constraint firstItem="dcC-1i-PqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PtB-lu-gll"/>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0sP-iz-74E"/>
+                            <constraint firstItem="foz-wP-hjZ" firstAttribute="top" secondItem="dcC-1i-PqB" secondAttribute="bottom" constant="8" id="MfQ-po-GNm"/>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pvo-bE-WpP"/>
                             <constraint firstItem="foz-wP-hjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="UZm-Wr-1hU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="foz-wP-hjZ" secondAttribute="trailing" constant="10" id="XNc-CJ-f1j"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="10" id="r5e-r8-DPi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="8" id="gyh-xp-mrj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="gCV-3Z-S0a"/>
+                    <tabBarItem key="tabBarItem" title="Staff Resources" id="gCV-3Z-S0a"/>
                     <connections>
                         <outlet property="webView" destination="foz-wP-hjZ" id="cDg-yU-mdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="417"/>
+            <point key="canvasLocation" x="445" y="-67"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="44" height="60"/>
+        <image name="Phil" width="44" height="60"/>
+    </resources>
 </document>
