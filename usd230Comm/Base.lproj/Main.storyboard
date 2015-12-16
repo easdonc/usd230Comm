@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-1i-PqB">
+                                <rect key="frame" x="246" y="28" width="109" height="30"/>
+                                <state key="normal" title="Staff Resources"/>
+                                <connections>
+                                    <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFy-kT-y6I"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
+                                <rect key="frame" x="30" y="58" width="540" height="532"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6Tc-fi-8Er"/>
+                            <constraint firstItem="foz-wP-hjZ" firstAttribute="top" secondItem="dcC-1i-PqB" secondAttribute="bottom" id="GJg-Q7-Te4"/>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PtB-lu-gll"/>
+                            <constraint firstItem="foz-wP-hjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="UZm-Wr-1hU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="foz-wP-hjZ" secondAttribute="trailing" constant="10" id="XNc-CJ-f1j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="10" id="r5e-r8-DPi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="foz-wP-hjZ" id="cDg-yU-mdy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="349"/>
         </scene>
     </scenes>
 </document>

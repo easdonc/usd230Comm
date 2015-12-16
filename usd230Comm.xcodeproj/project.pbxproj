@@ -146,6 +146,7 @@
 				TargetAttributes = {
 					B7D37B691C18C7B400622197 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = ZT3EERHQW7;
 					};
 					B7D37B7D1C18C7B400622197 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -327,10 +328,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = usd230Comm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.usd230.usd230Comm;
+				PRODUCT_BUNDLE_IDENTIFIER = org.usd230.usd230CommiPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -338,10 +343,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = usd230Comm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.usd230.usd230Comm;
+				PRODUCT_BUNDLE_IDENTIFIER = org.usd230.usd230CommiPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -388,6 +397,7 @@
 				B7D37B891C18C7B400622197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7D37B8A1C18C7B400622197 /* Build configuration list for PBXNativeTarget "usd230CommTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +406,7 @@
 				B7D37B8C1C18C7B400622197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
