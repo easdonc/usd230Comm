@@ -1,15 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Otq-Ec-RMu">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="QKX-rJ-hce">
+            <objects>
+                <tabBarController id="Otq-Ec-RMu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dsJ-F4-8TR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="R19-Xo-2zy"/>
+                        <segue destination="K4I-BW-Waa" kind="relationship" relationship="viewControllers" id="iNH-mD-D2q"/>
+                        <segue destination="xFj-j1-Tbo" kind="relationship" relationship="viewControllers" id="ESe-9G-PeG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pn2-GZ-dh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="447"/>
+        </scene>
+        <!--MOTD-->
+        <scene sceneID="cH4-kX-TV7">
+            <objects>
+                <viewController id="K4I-BW-Waa" userLabel="MOTD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z3U-f6-bfq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pdQ-u7-uIT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="duC-Bh-Hqj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phil's Wisdom and MOTD" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQV-YF-Hce">
+                                <rect key="frame" x="173" y="152" width="185" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="xhr-jM-Nyh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zu7-Zt-uTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="217"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="K1i-AW-BWP">
+            <objects>
+                <viewController id="xFj-j1-Tbo" userLabel="Game" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bC1-JS-dqy"/>
+                        <viewControllerLayoutGuide type="bottom" id="NnX-jH-INT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F8x-Wy-4Xp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="USD230 Fact Quiz" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYz-dk-KgD">
+                                <rect key="frame" x="164" y="140" width="141" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="KBC-Op-yFO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNM-vc-DdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="867"/>
+        </scene>
+        <!--Staff Resources-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="usd230Comm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Staff Resources" customClass="ViewController" customModule="usd230Comm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -25,7 +96,7 @@
                                     <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFy-kT-y6I"/>
                                 </connections>
                             </button>
-                            <webView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
+                            <webView contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
                                 <rect key="frame" x="30" y="58" width="540" height="532"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
@@ -40,13 +111,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="10" id="r5e-r8-DPi"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="gCV-3Z-S0a"/>
                     <connections>
                         <outlet property="webView" destination="foz-wP-hjZ" id="cDg-yU-mdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="349"/>
+            <point key="canvasLocation" x="937" y="417"/>
         </scene>
     </scenes>
 </document>
