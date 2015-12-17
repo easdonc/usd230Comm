@@ -44,21 +44,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Fix stupid, one cannot.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ7-qo-IZT">
-                                <rect key="frame" x="207" y="85" width="186" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="170" y="94" width="261" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phil" translatesAutoresizingMaskIntoConstraints="NO" id="diU-la-ZUM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Phil" translatesAutoresizingMaskIntoConstraints="NO" id="diU-la-ZUM">
                                 <rect key="frame" x="256" y="156" width="88" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="88" id="ayG-r9-vAC"/>
                                     <constraint firstAttribute="height" constant="121" id="mcf-OB-YDf"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The Star Wars Edition" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-kw-zG8">
-                                <rect key="frame" x="204" y="61" width="155" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The Star Wars Edition" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-kw-zG8">
+                                <rect key="frame" x="211" y="62" width="179" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -66,10 +66,11 @@
                         <constraints>
                             <constraint firstItem="diU-la-ZUM" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="2QC-T3-a2t"/>
                             <constraint firstItem="t2P-t8-q19" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="4Uy-Tf-l1Y"/>
-                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="25" id="CLe-J7-Drf"/>
-                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="HoU-nA-2er"/>
+                            <constraint firstItem="Q8V-kw-zG8" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="HQJ-nD-gDP"/>
                             <constraint firstItem="t2P-t8-q19" firstAttribute="top" secondItem="duC-Bh-Hqj" secondAttribute="topMargin" constant="30" id="XXW-cO-4r1"/>
-                            <constraint firstItem="diU-la-ZUM" firstAttribute="top" secondItem="nJ7-qo-IZT" secondAttribute="bottom" constant="50" id="p3g-Au-8dZ"/>
+                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="cjH-Y5-G1V"/>
+                            <constraint firstItem="Q8V-kw-zG8" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="2" id="iCM-8B-BnH"/>
+                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="top" secondItem="Q8V-kw-zG8" secondAttribute="bottom" constant="10" id="pws-JU-hrH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Messages" selectedImage="Image" id="xhr-jM-Nyh"/>
