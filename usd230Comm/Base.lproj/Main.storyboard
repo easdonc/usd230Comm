@@ -37,8 +37,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phil's Wisdom and Message of the Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-t8-q19">
-                                <rect key="frame" x="84" y="30" width="433" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phil's Wisdom" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-t8-q19">
+                                <rect key="frame" x="45" y="30" width="510" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -60,11 +60,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="diU-la-ZUM" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="2QC-T3-a2t"/>
-                            <constraint firstItem="t2P-t8-q19" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="4Uy-Tf-l1Y"/>
                             <constraint firstItem="nJ7-qo-IZT" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="25" id="CLe-J7-Drf"/>
                             <constraint firstItem="nJ7-qo-IZT" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="HoU-nA-2er"/>
+                            <constraint firstItem="t2P-t8-q19" firstAttribute="leading" secondItem="duC-Bh-Hqj" secondAttribute="leadingMargin" constant="25" id="MYX-aY-s5X"/>
                             <constraint firstItem="t2P-t8-q19" firstAttribute="top" secondItem="duC-Bh-Hqj" secondAttribute="topMargin" constant="30" id="XXW-cO-4r1"/>
                             <constraint firstItem="diU-la-ZUM" firstAttribute="top" secondItem="nJ7-qo-IZT" secondAttribute="bottom" constant="50" id="p3g-Au-8dZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t2P-t8-q19" secondAttribute="trailing" constant="25" id="pCv-nu-UX7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Messages" selectedImage="Image" id="xhr-jM-Nyh"/>
@@ -85,8 +86,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 230 Game or Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-pc-Q2b">
-                                <rect key="frame" x="170" y="30" width="260" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 230 Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-pc-Q2b">
+                                <rect key="frame" x="45" y="30" width="510" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -95,7 +96,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aUJ-pc-Q2b" firstAttribute="top" secondItem="F8x-Wy-4Xp" secondAttribute="top" constant="30" id="X32-X7-DAN"/>
-                            <constraint firstItem="aUJ-pc-Q2b" firstAttribute="centerX" secondItem="F8x-Wy-4Xp" secondAttribute="centerX" id="phc-UM-rkB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aUJ-pc-Q2b" secondAttribute="trailing" constant="25" id="er0-t9-MDd"/>
+                            <constraint firstItem="aUJ-pc-Q2b" firstAttribute="leading" secondItem="F8x-Wy-4Xp" secondAttribute="leadingMargin" constant="25" id="zD2-jZ-Mtj"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Game" id="KBC-Op-yFO"/>
