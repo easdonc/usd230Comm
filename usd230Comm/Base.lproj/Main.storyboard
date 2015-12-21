@@ -1,15 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Otq-Ec-RMu">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="QKX-rJ-hce">
+            <objects>
+                <tabBarController id="Otq-Ec-RMu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="dsJ-F4-8TR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="R19-Xo-2zy"/>
+                        <segue destination="K4I-BW-Waa" kind="relationship" relationship="viewControllers" id="iNH-mD-D2q"/>
+                        <segue destination="xFj-j1-Tbo" kind="relationship" relationship="viewControllers" id="ESe-9G-PeG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pn2-GZ-dh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="447"/>
+        </scene>
+        <!--MOTD-->
+        <scene sceneID="cH4-kX-TV7">
+            <objects>
+                <viewController id="K4I-BW-Waa" userLabel="MOTD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z3U-f6-bfq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pdQ-u7-uIT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="duC-Bh-Hqj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phil's Wisdom" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-t8-q19">
+                                <rect key="frame" x="45" y="45" width="510" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Fix stupid, one cannot.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ7-qo-IZT">
+                                <rect key="frame" x="170" y="100" width="261" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phil" translatesAutoresizingMaskIntoConstraints="NO" id="diU-la-ZUM">
+                                <rect key="frame" x="256" y="162" width="88" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="ayG-r9-vAC"/>
+                                    <constraint firstAttribute="height" constant="121" id="mcf-OB-YDf"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The Star Wars Edition" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-kw-zG8">
+                                <rect key="frame" x="211" y="77" width="179" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="diU-la-ZUM" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="2QC-T3-a2t"/>
+                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="25" id="CLe-J7-Drf"/>
+                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="HoU-nA-2er"/>
+                            <constraint firstItem="diU-la-ZUM" firstAttribute="top" secondItem="nJ7-qo-IZT" secondAttribute="bottom" constant="33" id="Kio-CT-ZDe"/>
+                            <constraint firstItem="t2P-t8-q19" firstAttribute="leading" secondItem="duC-Bh-Hqj" secondAttribute="leadingMargin" constant="25" id="MYX-aY-s5X"/>
+                            <constraint firstItem="t2P-t8-q19" firstAttribute="top" secondItem="duC-Bh-Hqj" secondAttribute="topMargin" constant="45" id="XXW-cO-4r1"/>
+                            <constraint firstItem="Q8V-kw-zG8" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="Xh5-T4-0ld"/>
+                            <constraint firstItem="Q8V-kw-zG8" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="2" id="ipK-E2-FHq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t2P-t8-q19" secondAttribute="trailing" constant="25" id="pCv-nu-UX7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" selectedImage="Image" id="xhr-jM-Nyh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zu7-Zt-uTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="245"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="K1i-AW-BWP">
+            <objects>
+                <viewController id="xFj-j1-Tbo" userLabel="Game" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bC1-JS-dqy"/>
+                        <viewControllerLayoutGuide type="bottom" id="NnX-jH-INT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F8x-Wy-4Xp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 230 Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUJ-pc-Q2b">
+                                <rect key="frame" x="45" y="45" width="510" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aUJ-pc-Q2b" firstAttribute="top" secondItem="F8x-Wy-4Xp" secondAttribute="top" constant="45" id="X32-X7-DAN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aUJ-pc-Q2b" secondAttribute="trailing" constant="25" id="er0-t9-MDd"/>
+                            <constraint firstItem="aUJ-pc-Q2b" firstAttribute="leading" secondItem="F8x-Wy-4Xp" secondAttribute="leadingMargin" constant="25" id="zD2-jZ-Mtj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Game" id="KBC-Op-yFO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNM-vc-DdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="791"/>
+        </scene>
+        <!--Staff Resources-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="usd230Comm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Staff Resources" customClass="ViewController" customModule="usd230Comm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,35 +125,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
+                                <rect key="frame" x="30" y="95" width="540" height="448"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-1i-PqB">
-                                <rect key="frame" x="246" y="28" width="109" height="30"/>
+                                <rect key="frame" x="212" y="45" width="176" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Staff Resources"/>
                                 <connections>
                                     <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFy-kT-y6I"/>
                                 </connections>
                             </button>
-                            <webView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
-                                <rect key="frame" x="30" y="58" width="540" height="532"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dcC-1i-PqB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6Tc-fi-8Er"/>
-                            <constraint firstItem="foz-wP-hjZ" firstAttribute="top" secondItem="dcC-1i-PqB" secondAttribute="bottom" id="GJg-Q7-Te4"/>
-                            <constraint firstItem="dcC-1i-PqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PtB-lu-gll"/>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="45" id="K9v-Zc-vp9"/>
+                            <constraint firstItem="foz-wP-hjZ" firstAttribute="top" secondItem="dcC-1i-PqB" secondAttribute="bottom" constant="8" id="MfQ-po-GNm"/>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pvo-bE-WpP"/>
                             <constraint firstItem="foz-wP-hjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="UZm-Wr-1hU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="foz-wP-hjZ" secondAttribute="trailing" constant="10" id="XNc-CJ-f1j"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="10" id="r5e-r8-DPi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="8" id="gyh-xp-mrj"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Staff Resources" id="gCV-3Z-S0a"/>
                     <connections>
                         <outlet property="webView" destination="foz-wP-hjZ" id="cDg-yU-mdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="349"/>
+            <point key="canvasLocation" x="445" y="-67"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="44" height="60"/>
+        <image name="Phil" width="44" height="60"/>
+    </resources>
 </document>
