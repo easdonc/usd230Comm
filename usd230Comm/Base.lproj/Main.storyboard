@@ -36,44 +36,7 @@
                     <view key="view" contentMode="scaleToFill" id="duC-Bh-Hqj">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phil's Wisdom" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-t8-q19">
-                                <rect key="frame" x="45" y="45" width="510" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Fix stupid, one cannot.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ7-qo-IZT">
-                                <rect key="frame" x="170" y="100" width="261" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phil" translatesAutoresizingMaskIntoConstraints="NO" id="diU-la-ZUM">
-                                <rect key="frame" x="256" y="162" width="88" height="121"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="88" id="ayG-r9-vAC"/>
-                                    <constraint firstAttribute="height" constant="121" id="mcf-OB-YDf"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The Star Wars Edition" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-kw-zG8">
-                                <rect key="frame" x="211" y="77" width="179" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="diU-la-ZUM" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="2QC-T3-a2t"/>
-                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="25" id="CLe-J7-Drf"/>
-                            <constraint firstItem="nJ7-qo-IZT" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="HoU-nA-2er"/>
-                            <constraint firstItem="diU-la-ZUM" firstAttribute="top" secondItem="nJ7-qo-IZT" secondAttribute="bottom" constant="33" id="Kio-CT-ZDe"/>
-                            <constraint firstItem="t2P-t8-q19" firstAttribute="leading" secondItem="duC-Bh-Hqj" secondAttribute="leadingMargin" constant="25" id="MYX-aY-s5X"/>
-                            <constraint firstItem="t2P-t8-q19" firstAttribute="top" secondItem="duC-Bh-Hqj" secondAttribute="topMargin" constant="45" id="XXW-cO-4r1"/>
-                            <constraint firstItem="Q8V-kw-zG8" firstAttribute="centerX" secondItem="duC-Bh-Hqj" secondAttribute="centerX" id="Xh5-T4-0ld"/>
-                            <constraint firstItem="Q8V-kw-zG8" firstAttribute="top" secondItem="t2P-t8-q19" secondAttribute="bottom" constant="2" id="ipK-E2-FHq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="t2P-t8-q19" secondAttribute="trailing" constant="25" id="pCv-nu-UX7"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Messages" selectedImage="Image" id="xhr-jM-Nyh"/>
                 </viewController>
@@ -160,6 +123,5 @@
     </scenes>
     <resources>
         <image name="Image" width="44" height="60"/>
-        <image name="Phil" width="44" height="60"/>
     </resources>
 </document>

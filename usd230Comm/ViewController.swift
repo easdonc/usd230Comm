@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import TwitterKit
 
 // MARK: Outlets
+
+
+class UserTimelineViewController: TWTRTimelineViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let client = TWTRAPIClient()
+        self.dataSource = TWTRUserTimelineDataSource(screenName: "SHSchools", APIClient: client)
+    }
+}
 
 class ViewController: UIViewController {
 
@@ -20,6 +31,7 @@ class ViewController: UIViewController {
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
         // Above section allows for immediate load of webview.
+        
     }
 
     override func didReceiveMemoryWarning() {
