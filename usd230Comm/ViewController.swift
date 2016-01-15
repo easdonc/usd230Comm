@@ -9,18 +9,29 @@
 import UIKit
 import TwitterKit
 
-// MARK: Outlets
+// MARK: Views
 
-
+// MARK: Twitter
 class UserTimelineViewController: TWTRTimelineViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Twitter"
         let client = TWTRAPIClient()
         self.dataSource = TWTRUserTimelineDataSource(screenName: "SHSchools", APIClient: client)
     }
 }
+// Above section is the Twitter controller
 
+// MARK: Game
+class GameController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Game"
+    }
+}
+// Above section is the game controller
+
+// MARK: Staf Resources
 class ViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
@@ -31,15 +42,8 @@ class ViewController: UIViewController {
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
         // Above section allows for immediate load of webview.
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        }
     
-// MARK: Actions
     
      @IBAction func openPage(sender: UIButton) {
         if let url = NSURL(string: "http://www.usd230.org/web_banners/resources_mobile/index.php") {
@@ -52,3 +56,4 @@ class ViewController: UIViewController {
 
 
 }
+// Above section is staff resources controller
