@@ -32,12 +32,13 @@ class GameController: UIViewController {
 // Above section is the game controller
 
 // MARK: Staf Resources
-class ViewController: UIViewController {
+class StaffResourcesController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Staff Resources"
         let url = NSURL(string: "http://www.usd230.org/web_banners/resources_mobile/index.php")
         let request = NSURLRequest(URL: url!)
         webView.loadRequest(request)
