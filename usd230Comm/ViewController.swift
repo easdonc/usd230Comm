@@ -28,6 +28,7 @@ class GameController: UIViewController {
         super.viewDidLoad()
         self.title = "Game"
     }
+
 }
 // Above section is the game controller
 

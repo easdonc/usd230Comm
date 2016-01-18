@@ -11,6 +11,7 @@
 		B73D10A61C3C51B700E82BE2 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73D10A21C3C51B700E82BE2 /* TwitterKit.framework */; };
 		B73D10A71C3C51B700E82BE2 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B73D10A31C3C51B700E82BE2 /* TwitterKitResources.bundle */; };
 		B73D10A81C3C51B700E82BE2 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73D10A41C3C51B700E82BE2 /* TwitterCore.framework */; };
+		B7C6C5951C4D755F00CD1BBF /* Answers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C6C5941C4D755F00CD1BBF /* Answers.framework */; };
 		B7D37B6E1C18C7B400622197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D37B6D1C18C7B400622197 /* AppDelegate.swift */; };
 		B7D37B701C18C7B400622197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D37B6F1C18C7B400622197 /* ViewController.swift */; };
 		B7D37B731C18C7B400622197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D37B711C18C7B400622197 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		B73D10A21C3C51B700E82BE2 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		B73D10A31C3C51B700E82BE2 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		B73D10A41C3C51B700E82BE2 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		B7C6C5941C4D755F00CD1BBF /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = "<group>"; };
 		B7D37B6A1C18C7B400622197 /* usd230Comm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usd230Comm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D37B6D1C18C7B400622197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7D37B6F1C18C7B400622197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C6C5951C4D755F00CD1BBF /* Answers.framework in Frameworks */,
 				B73D10A51C3C51B700E82BE2 /* Fabric.framework in Frameworks */,
 				B73D10A81C3C51B700E82BE2 /* TwitterCore.framework in Frameworks */,
 				B73D10A61C3C51B700E82BE2 /* TwitterKit.framework in Frameworks */,
@@ -73,6 +76,7 @@
 				B7D37B6C1C18C7B400622197 /* usd230Comm */,
 				B7D37B811C18C7B400622197 /* usd230CommTests */,
 				B7D37B6B1C18C7B400622197 /* Products */,
+				B7C6C5941C4D755F00CD1BBF /* Answers.framework */,
 				B73D10A11C3C51B700E82BE2 /* Fabric.framework */,
 				B73D10A21C3C51B700E82BE2 /* TwitterKit.framework */,
 				B73D10A31C3C51B700E82BE2 /* TwitterKitResources.bundle */,
