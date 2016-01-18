@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  usd230Comm
 //
-//  Created by Colton Easdon on 12/9/15.
+//  Created by USD 230 Information Technology on 12/9/15.
 //  Copyright © 2015 USD230IT. All rights reserved.
 //
 

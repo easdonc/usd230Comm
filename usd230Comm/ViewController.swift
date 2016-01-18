@@ -31,7 +31,7 @@ class GameController: UIViewController {
 }
 // Above section is the game controller
 
-// MARK: Staf Resources
+// MARK: Staff Resources
 class StaffResourcesController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
