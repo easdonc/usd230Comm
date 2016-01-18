@@ -17,7 +17,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="R19-Xo-2zy"/>
+                        <segue destination="hO6-Nu-6Nu" kind="relationship" relationship="viewControllers" id="R19-Xo-2zy"/>
                         <segue destination="4xS-NY-bQt" kind="relationship" relationship="viewControllers" id="NP5-x5-hZS"/>
                         <segue destination="D1c-Z2-291" kind="relationship" relationship="viewControllers" id="x9u-EE-D5p"/>
                     </connections>
@@ -122,35 +122,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
-                                <rect key="frame" x="30" y="95" width="540" height="448"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcC-1i-PqB">
-                                <rect key="frame" x="212" y="45" width="176" height="42"/>
+                                <rect key="frame" x="158" y="70" width="284" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Staff Resources"/>
+                                <state key="normal" title="Return to Staff Resources"/>
                                 <connections>
                                     <action selector="openPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFy-kT-y6I"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foz-wP-hjZ" customClass="webView">
+                                <rect key="frame" x="15" y="114" width="570" height="429"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dcC-1i-PqB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="45" id="K9v-Zc-vp9"/>
-                            <constraint firstItem="foz-wP-hjZ" firstAttribute="top" secondItem="dcC-1i-PqB" secondAttribute="bottom" constant="8" id="MfQ-po-GNm"/>
-                            <constraint firstItem="dcC-1i-PqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pvo-bE-WpP"/>
-                            <constraint firstItem="foz-wP-hjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="UZm-Wr-1hU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="foz-wP-hjZ" secondAttribute="trailing" constant="10" id="XNc-CJ-f1j"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="8" id="gyh-xp-mrj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foz-wP-hjZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Txv-Iu-pam"/>
+                            <constraint firstAttribute="trailing" secondItem="foz-wP-hjZ" secondAttribute="trailing" constant="15" id="ZVC-cJ-OdF"/>
+                            <constraint firstItem="foz-wP-hjZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="cd4-gu-yqD"/>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="70" id="djs-1M-72M"/>
+                            <constraint firstItem="foz-wP-hjZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="yIs-yX-S1o"/>
+                            <constraint firstItem="dcC-1i-PqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zvi-Pe-CAs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Staff Resources" image="Resources" id="gCV-3Z-S0a"/>
+                    <navigationItem key="navigationItem" id="R6B-oK-Fs0"/>
                     <connections>
                         <outlet property="webView" destination="foz-wP-hjZ" id="cDg-yU-mdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="-347"/>
+        </scene>
+        <!--Staff Resources-->
+        <scene sceneID="FlJ-Kk-YrD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hO6-Nu-6Nu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Staff Resources" image="Resources" id="gCV-3Z-S0a"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MQJ-vI-2a6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QGb-n9-GSr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOx-8n-q7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="635" y="-347"/>
         </scene>
