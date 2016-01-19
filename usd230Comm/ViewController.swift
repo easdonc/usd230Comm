@@ -15,7 +15,7 @@ import TwitterKit
 class UserTimelineViewController: TWTRTimelineViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Twitter"
+        self.title = "@SHSchools Twitter"
         let client = TWTRAPIClient()
         self.dataSource = TWTRUserTimelineDataSource(screenName: "SHSchools", APIClient: client)
     }

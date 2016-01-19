@@ -30,7 +30,7 @@
         <scene sceneID="IyU-XV-H1V">
             <objects>
                 <navigationController id="4xS-NY-bQt" userLabel="Twitter" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Twitter" image="Twitter" id="KoU-hk-77O"/>
+                    <tabBarItem key="tabBarItem" title="@SHSchools Twitter" image="Twitter" id="KoU-hk-77O"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UGy-MG-pEp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -103,7 +103,7 @@
                             <outlet property="delegate" destination="b0i-za-4fk" id="HUS-kJ-Ur3"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Twitter" image="Twitter" id="PTQ-mG-J53"/>
+                    <tabBarItem key="tabBarItem" title="@SHSchools Twitter" image="Twitter" id="PTQ-mG-J53"/>
                     <navigationItem key="navigationItem" id="vAm-A0-KfS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JR8-B5-6cV" userLabel="First Responder" sceneMemberID="firstResponder"/>
